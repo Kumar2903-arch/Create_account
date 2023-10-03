@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Main Page */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: linear-gradient(aqua,black);
+    min-height: 611px;
+}
+/* Card Box */
+.card_box {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+}
+.card_box h3 {
+    text-align: center;
+    padding-top: 30px; 
+}
+/* Personal Details */
+.personal_details > p {
+    padding-top: 25px;
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+    font-size: 15px;
+} 
+.space {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 50px;
+    column-gap: 20px;
+}
+.space p {
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+    font-size: 15px;
+}
+/* Button Tag */
+.btn {
+   padding-top: 40px;
+   text-align: center;
+   
+}
+.btn p {
+    padding: 10px 85px;
+    border-radius: 20px;
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(aqua,black);
+    color: white;
+}
+/* Media-Query */
+/*  Mobile */
+@media screen and (min-width:300px) and (max-width:500px) {
+    .container {
+        background-image: linear-gradient(darkslateblue,green);
+        min-height: 500px;
+    } 
+    .space {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .card_box {
+        width: 80%;
+        height: 30%;
+      }
+      .personal_details > p {
+        font-size: 13px;
+        padding-top: 18px;
+      }
+      .space p {
+        font-size: 13px;
+      }
+      .card_box h3 {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 16px; 
+    }
+      .btn p {
+        padding: 10px 35px;
+        border-radius: 20px;
+        box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(darkslateblue,green);
+        color: white;
+    }
+}   
+@media screen and (min-width:500px) and (max-width:800px) {
+    .container {
+        min-height: 500px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1300px) {
+    .container {
+        min-height: 500px;
+    }
+}
+
+      
+
